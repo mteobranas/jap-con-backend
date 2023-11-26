@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mariadb": "^3.2.2",
+    "node": "^21.1.0"
+  },
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "Realización del backend del proyecto, separado de la lógica con localstorage",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PepeLasagna/eCommerceConBackend.git"
+  },
+  "author": "Grupo 1 - Agustina González, Daiana Melo, Diego Pirez, Diego Soto, Ivan Rodriguez, Mateo Brañas, Matias Fructos, Santiago Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PepeLasagna/eCommerceConBackend/issues"
+  },
+  "homepage": "https://github.com/PepeLasagna/eCommerceConBackend#readme"
+}
