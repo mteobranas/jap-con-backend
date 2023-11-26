@@ -7,7 +7,6 @@ const getUser = async (req, res) => {
   const { email, password } = req.body
   const user = await userModel.getUser({ email, password })
   if (user.length > 0) {
-    console.log(user[0].id)
     const token = jwt.sign(user[0].id, process.env.SECRET ?? secretKey)
     res.json(token)
   } else {

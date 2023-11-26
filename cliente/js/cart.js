@@ -121,9 +121,6 @@ document.getElementById('formEnvio').addEventListener('submit', (e) => {
   let bank_account = document.getElementById('payment-bank-account')
   let credit_card = document.getElementById('payment-credit-card')
 
-  console.log(bank_account)
-  console.log(credit_card)
-
   validateInput(calle)
   validateInput(numero)
   validateInput(ciudad)
@@ -151,7 +148,7 @@ document.getElementById('formEnvio').addEventListener('submit', (e) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+        alert(data.message)
       })
   } else {
     return
